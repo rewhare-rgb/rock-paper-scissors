@@ -4,7 +4,7 @@ This project is a simple Rock - Paper - Scissors game using HTML, CSS, and JavaS
 
 ## How to Play
 
-To play the game, simply click on one of the buttons representing your choice: rock, paper, or scissors. The computer will randomly choose its move, and the winner of the round will be displayed on the screen.
+To [play the game] (https://rewhare-rgb.github.io/rock-paper-scissors), simply click on one of the buttons representing your choice: rock, paper, or scissors. The computer will randomly choose its move, and the winner of the round will be displayed on the screen.
 
 ## Features
 
@@ -13,6 +13,3 @@ To play the game, simply click on one of the buttons representing your choice: r
 - See real-time updates of your choices, the computer's choices, and the game results.
 - The game ends once either the player or the computer reaches a score of 5, and the winner is declared.
 
-## How to Run
-
-Simply open the `index.html` file in your web browser to start playing the game.
