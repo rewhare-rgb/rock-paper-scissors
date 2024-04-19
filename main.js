@@ -10,6 +10,10 @@ let computerScore = 0;
 
 function startGame(playerChoice) {
 
+    if (playerScore === 5 || computerScore === 5) {
+        return;
+    }
+
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
     let result = "";
 
@@ -51,86 +55,5 @@ function startGame(playerChoice) {
         }
 
 }
-
-
-// player choice
-
-/* function playerChoice (){
-    let input = prompt("Enter Rock, Paper or Scissors");
-    while(!choices.includes(input)) {
-        input = prompt("Invalid choice. Please enter Rock, Paper or Scissors");
-    }
-    return input.toLowerCase();
-}
-*/
-
-// computer choice
-
-/* function computerChoice() {
-
-    return choices[Math.floor(Math.random() * choices.length)];
-} 
-*/
-
-
-
-/* function playRound() {    
-
-    const playerSelection = playerChoice();
-    const computerSelection = computerChoice();
-
-    console.log("Player choice:", playerSelection);
-    console.log("Computer choice:", computerSelection);
-
-    if (playerSelection === computerSelection) {
-        console.log("It's a tie!");
-        ;
-    } else if (
-        (playerSelection === "rock" && computerSelection === "scissors") || 
-        (playerSelection === "paper" && computerSelection === "rock") || 
-        (playerSelection === "scissors" && computerSelection === "paper")
-        ) {
-            console.log("Player wins!");
-            ;
-        } else {
-            console.log("Computer wins!");
-            ;
-
-        }
-}
-*/
-
-/* function playAgain() {
-    const decision = prompt("Play again? (yes/no)").toLowerCase();
-    if (decision === "yes") {
-        playerScore = 0;
-        computerScore = 0;
-        ties = 0;
-        game();
-    } else if (decision === "no") {
-        return;
-    } else {
-        console.log("Invalid choice. Please enter yes or no");
-        playAgain();
-    }
-    }
-
-    */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
